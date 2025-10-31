@@ -163,14 +163,14 @@ struct WelcomeView: View {
                 VStack(spacing: 20) {
                     Image(systemName: "checkmark.circle.fill")
                         .font(.system(size: 120))
-                        .foregroundStyle(.cyan)
-                        .shadow(color: .green.opacity(0.2), radius: 30)
+                        .foregroundStyle(.blue)
+                        .shadow(color: .blue.opacity(0.2), radius: 30)
                         .scaleEffect(scale)
                         .opacity(opacity)
                     
                     Text("FlowList")
                         .font(.system(size: 60, weight: .bold, design: .rounded))
-                        .foregroundStyle(.cyan)
+                        .foregroundStyle(.blue)
                         .opacity(opacity)
                     
                     Text("Organize suas tarefas com estilo")
@@ -196,7 +196,7 @@ struct WelcomeView: View {
                         .padding(.vertical, 18)
                         .background(
                             LinearGradient(
-                                colors: [.cyan, .green],
+                                colors: [.blue, .cyan],
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
@@ -438,7 +438,7 @@ struct TaskView: View {
                         .frame(width: 60, height: 60)
                         .background(
                             LinearGradient(
-                                colors: [.cyan, .green],
+                                colors: [.cyan, .blue],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             )
@@ -528,7 +528,7 @@ struct TaskCardView: View {
                     .foregroundColor(.secondary.opacity(0.5))
             }
             .padding(16)
-            .background(.ultraThinMaterial)
+            .background(.white)
             .cornerRadius(16)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
@@ -652,7 +652,7 @@ struct TaskDetailView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(24)
-        .background(.ultraThinMaterial)
+        .background(.white)
         .cornerRadius(20)
     }
     
@@ -725,7 +725,7 @@ struct TaskDetailView: View {
             }
         }
         .padding(20)
-        .background(.ultraThinMaterial)
+        .background(.white)
         .cornerRadius(16)
     }
     
@@ -751,7 +751,7 @@ struct TaskDetailView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(20)
-        .background(.ultraThinMaterial)
+        .background(.white)
         .cornerRadius(16)
     }
     
@@ -789,7 +789,7 @@ struct TaskDetailView: View {
             }
         }
         .padding(20)
-        .background(.ultraThinMaterial)
+        .background(.white)
         .cornerRadius(16)
     }
 }
